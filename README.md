@@ -4,6 +4,7 @@ Este proyecto busca ejecutar el software de monitoreo para gestion de NVR ZKTeco
 
 #### Links de los manuales
 [Manual de Debian](https://github.com/ozzvb/wine-antarvis_2.0/blob/main/README-DEBIAN.md)
+
 [Manual de Ubuntu/Linux](https://github.com/ozzvb/wine-antarvis_2.0/blob/main/README-LINUX.md)
 
 #### Dependencias
