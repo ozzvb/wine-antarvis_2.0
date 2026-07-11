@@ -18,10 +18,12 @@ sudo dnf install wine winetricks -y
 Si se necesita una versión más reciente de Wine, se puede usar el repositorio oficial de WineHQ:
 
 ```bash
-sudo dnf install dnf-plugins-core -y
-sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/44/winehq.repo
+sudo dnf install dnf5-plugins -y
+sudo dnf config-manager addrepo --from-repofile=https://dl.winehq.org/wine-builds/fedora/44/winehq.repo
 sudo dnf install winehq-stable -y
 ```
+
+> ℹ️ Fedora 41+ usa `dnf5`, cuyo plugin `config-manager` cambió de sintaxis respecto a `dnf4` (`--add-repo` ya no existe; ahora es `addrepo --from-repofile=`).
 
 > ⚠️ Si el repositorio de WineHQ aún no publica una versión para Fedora 44, usar el paquete `wine` de los repositorios oficiales de Fedora como alternativa.
 
