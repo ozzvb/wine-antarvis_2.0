@@ -8,26 +8,38 @@ Guía general para ejecutar AntarVis 2.0 en Linux utilizando Wine.
 - Wine instalado
 
 ## 📦 Instalación de Wine (Debian/Ubuntu)
+```bash
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install wine wine32 wine64 winbind
+```
 
 ## 🛠️ Winetricks
+```bash
 sudo apt install winetricks
+```
 
 ## 🧪 Prefijo
+```bash
 export WINEPREFIX=$HOME/.wine-antarvis
 export WINEARCH=win32
 winecfg
+```
 
 ## 📚 Dependencias
+```bash
 WINEPREFIX=$HOME/.wine-antarvis winetricks corefonts vcrun2008 vcrun2010 vcrun2015 dotnet40 quartz wmp9
+```
 
 ## ▶️ Ejecutar
+```bash
 WINEPREFIX=$HOME/.wine-antarvis wine AntarVis\ 2.0-20210317.exe
+```
 
 ## 📁 Ruta
+```
 Z:\home\usuario\Videos\antarvis
+```
 
 ## ⚠️ Notas
 - Compatibilidad parcial

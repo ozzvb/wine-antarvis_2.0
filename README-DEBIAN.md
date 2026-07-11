@@ -10,35 +10,53 @@ Este documento describe el procedimiento para instalar y ejecutar el software **
 
 ## 📦 Configuración de repositorios
 Editar:
+```bash
 sudo nano /etc/apt/sources.list
+```
 
 Agregar:
+```
 deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+```
 
 Actualizar:
+```bash
 sudo apt update
+```
 
 ## 🧱 Instalación de Wine
+```bash
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install wine wine32:i386 wine64 winbind
+```
 
 ## 🛠️ Winetricks
+```bash
 sudo apt install winetricks
+```
 
 ## 🧪 Prefijo Wine
+```bash
 export WINEPREFIX=$HOME/.wine-antarvis
 export WINEARCH=win32
 winecfg
+```
 
 ## 📚 Dependencias
+```bash
 WINEPREFIX=$HOME/.wine-antarvis winetricks corefonts vcrun2008 vcrun2010 vcrun2015 dotnet40 quartz wmp9
+```
 
 ## ▶️ Ejecutar
+```bash
 WINEPREFIX=$HOME/.wine-antarvis wine AntarVis\ 2.0-20210317.exe
+```
 
 ## 📁 Ruta recomendada
+```
 Z:\home\usuario\Videos\antarvis
+```
 
 ## ⚠️ Notas
 - Descargas pueden tardar sin feedback
